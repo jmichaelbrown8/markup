@@ -9,6 +9,12 @@
   --navbar-height: 50px;
 }
 
+/* Fixes height of editor window */
+.CodeMirror {
+  height: 100%;
+  height: calc(100vh - var(--navbar-height));
+}
+
 body {
   margin: 0;
   background-color: var(--monoaki);

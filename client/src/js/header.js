@@ -1,5 +1,4 @@
-const header = `
-/*
+const header = `/*
                        _                
                       | |               
   _ __ ___   __ _ _ __| | ___   _ _ __  
