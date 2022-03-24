@@ -18,7 +18,6 @@ const initdb = async () =>
  */
 export const putDb = async (content) => {
   console.log("PUT to the database");
-  console.log(content);
   const markupDB = await openDB("markupDB", 1);
   const tx = markupDB.transaction("markup", "readwrite");
   const store = tx.objectStore("markup");
@@ -28,7 +27,20 @@ export const putDb = async (content) => {
   console.log("🚀 - data saved to the database", result);
 };
 
-// TODO: Add logic for a method that gets all the content from the database
-export const getDb = async () => console.error("getDb not implemented");
+/**
+ * This method gets the data from the database.
+ * @returns {object} { id, content }
+ */
+export const getDb = async () => {
+  console.log("GET from the database");
+  const markupDB = await openDB("markupDB", 1);
+  const tx = markupDB.transaction("markup", "readonly");
+  const store = tx.objectStore("markup");
+  // hard-code to id 1 for now
+  const request = store.get(1);
+  const result = await request;
+  console.log("🚀 - data received from the database");
+  return result;
+};
 
 initdb();
