@@ -31,8 +31,8 @@ module.exports = () => {
         name: "markup",
         short_name: "markup",
         description: "mark it up or type it down!",
-        background_color: "#225ca3",
-        theme_color: "#225ca3",
+        background_color: "black",
+        theme_color: "black",
         start_url: "/",
         publicPath: "/",
         icons: [
