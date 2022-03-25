@@ -15,6 +15,10 @@
   height: calc(100vh - var(--navbar-height));
 }
 
+.hidden {
+  display: none !important;
+}
+
 body {
   margin: 0;
   background-color: var(--monoaki);
