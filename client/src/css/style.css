@@ -13,6 +13,7 @@
 .CodeMirror {
   height: 100%;
   height: calc(100vh - var(--navbar-height));
+  font-size: 16px; /* fixes iOS "auto-zoom" on input */
 }
 
 .hidden {
