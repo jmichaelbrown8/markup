@@ -2,7 +2,7 @@
   "name": "markup",
   "scripts": {
     "dev": "webpack && webpack-dev-server",
-    "build": "webpack",
+    "build": "webpack --mode production",
     "start": "webpack --watch"
   },
   "devDependencies": {
