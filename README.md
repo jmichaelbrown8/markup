@@ -22,6 +22,8 @@ This app is built with webpack to take advantage of ES6 syntax transpiling and s
 
 ## Usage & Installation
 
+### Chrome on Desktop
+
 - Visit the live site, or run the code locally `npm run start:dev`
 
   ![screenshot1](./screenshots/markup-1.png)
@@ -34,3 +36,12 @@ This app is built with webpack to take advantage of ES6 syntax transpiling and s
 
   ![screenshot4](./screenshots/markup-4.png)
   ![screenshot3](./screenshots/markup-3.png)
+
+### iOS Safari
+
+- Visit the live site and click the share icon
+  ![mobilescreenshot1](./screenshots/mobile-1.png)
+
+- Choose 'Add to Home Screen'  
+  ![mobilescreenshot2](./screenshots/mobile-2.png)
+  ![mobilescreenshot3](./screenshots/mobile-3.png)
